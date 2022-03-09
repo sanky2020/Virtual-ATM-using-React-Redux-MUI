@@ -1,0 +1,76 @@
+*{
+  margin: 10px;
+}
+body{
+  background-image: linear-gradient(to right,#74ebd5, #ACB6E5);
+}
+.App {
+  text-align: center;
+}
+h1,h3{
+  width: 60%;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  margin: 0 auto;
+}
+h3{
+  box-shadow: 0 3px 8px grey;
+  margin-bottom: 1rem;
+}
+h1{
+  box-shadow: 0 3px 8px grey;
+  color: white;
+  background-color: #4d854a;
+  padding: 1rem;
+  border: 3px solid white;
+}
+.btn{
+  font-size: 1.2rem;
+  padding: 2rem;
+  margin: 0.5rem 2rem;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 800;
+  box-shadow: 0 5px 8px grey;
+}
+
+.btn:hover{
+  color: white;
+}
+.btn:active{
+  transform: scale(0.98);
+}
+.task-selector button:first-of-type{
+  background-color: #b9f7b5;
+}
+.task-selector button:first-of-type:hover{
+  background-color: #4d854a;
+}
+.task-selector button:last-child{
+  background-color: rgb(247, 184, 184);
+}
+.task-selector button:last-child:hover{
+  background-color: rgb(233, 91, 91);
+}
+.task-selector, 
+.input-section{
+  width: 50%;
+  margin: 0.8rem auto;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: 3px solid white;
+  box-shadow: 0 5px 8px grey;
+}
+.task-selector p{
+  font-size: large;
+  font-weight: 700;
+}
+.payment-slip{
+  width: 30%;
+  margin: 1rem auto;
+  padding: 1rem;
+  background-color: #d6e8fa;
+  border-radius: 2rem;
+  box-shadow: 0 5px 8px grey;
+}
