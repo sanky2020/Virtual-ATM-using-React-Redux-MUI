@@ -6,22 +6,11 @@ import Table from './Table'
 function Statement() {
   const [statement, setStatement] = useState(false);
 
-  const { date, time, accType, amount, balance } = useSelector(
+  const { date, time, accType, amount, balance, statementList } = useSelector(
     (state) => state.amountReducer
   );
-
-  console.log(
-    "date: ",
-    date,
-    " time: ",
-    time,
-    " type: ",
-    accType,
-    " amount: ",
-    amount,
-    " balance: ",
-    balance
-  );
+    
+  const rows = statementList
 
   const toggleStatement = () =>{
     setStatement(!statement)
@@ -29,7 +18,7 @@ function Statement() {
   
   return (<>
   <div className="payment-slip">
-      <h4>Payment Slip:</h4>
+      <h4>Payment Receipt:</h4>
       <p>Type: {accType}</p>
       <p>Amount: {amount} Rs</p>
       <p>Balance: {balance} Rs</p>
@@ -38,7 +27,7 @@ function Statement() {
     </div>
    
     <button onClick={toggleStatement}>View Statement</button>
-      {statement ? <Table />:""}
+      {statement ? <Table rows={rows}/>:""}
   </>
     
   );
