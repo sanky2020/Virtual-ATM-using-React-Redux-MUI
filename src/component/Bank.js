@@ -26,8 +26,6 @@ function Bank() {
     }
    }
 
-   
-
   return (
     <div>
     <h3>Welcome to Virtual ATM </h3>
