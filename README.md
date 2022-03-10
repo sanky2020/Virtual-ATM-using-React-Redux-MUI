@@ -1,5 +1,7 @@
 Live Preview @ => https://virtual-atm-using-react-redux-mui.vercel.app/  
 
+* Validation condition: Username & Password should be same. 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
